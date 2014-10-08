@@ -1,0 +1,14 @@
+.textboxControl {
+  display: inline-block !important;
+  margin-left: 180px !important;
+}
+
+.input-xlarge {
+	height: 2em !important;
+}
+
+#facebookSprite {
+	width:40px;
+	height:40px;
+	background: url(../WebContent/images/social_icons.png) 0 0;
+}
