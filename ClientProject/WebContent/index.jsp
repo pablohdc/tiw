@@ -30,6 +30,14 @@
 			<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
 			<script src="js/respond.min.js"></script>
 		<![endif]-->
+		
+		<script type="text/javascript">
+			$(document).ready(function(){
+				if(localStorage.user.length!=0){
+					$('#user').html("Hola, "+localStorage.user);
+				}
+			})
+		</script>
 	</head>
     <body>		
 		<div id="top-bar" class="container">
@@ -40,9 +48,9 @@
 			</div>
 			<div class="col-md-8">
 				<div class="account pull-right">
-						<ul class="user-menu">				
-							<li><a href="#">Mi cuenta</a></li>				
-							<li><a href="register.html">Login</a></li>		
+						<ul class="user-menu">
+							<li><a id="user" href="login.jsp">Login</a></li>					
+							<li><a href="./myAccount.jsp">Mi cuenta</a></li>					
 						</ul>
 				</div>
 				<div style="padding-top: 3em;">
@@ -67,61 +75,13 @@
 			</div>
 		</div>
 		<div id="wrapper" class="container">
-			<section class="navbar main-menu">
-				<div class="navbar-inner main-menu">				
-					<a href="index.html" class="logo pull-left"><img src="themes/images/logo.png" class="site_logo" alt=""></a>
-					<nav id="menu" class="pull-right">
-						<ul>
-							<li><a href="./products.html">Woman</a>					
-								<ul>
-									<li><a href="./products.html">Lacinia nibh</a></li>									
-									<li><a href="./products.html">Eget molestie</a></li>
-									<li><a href="./products.html">Varius purus</a></li>									
-								</ul>
-							</li>															
-							<li><a href="./products.html">Man</a></li>			
-							<li><a href="./products.html">Sport</a>
-								<ul>									
-									<li><a href="./products.html">Gifts and Tech</a></li>
-									<li><a href="./products.html">Ties and Hats</a></li>
-									<li><a href="./products.html">Cold Weather</a></li>
-								</ul>
-							</li>							
-							<li><a href="./products.html">Hangbag</a></li>
-							<li><a href="./products.html">Best Seller</a></li>
-							<li><a href="./products.html">Top Seller</a></li>
-						</ul>
-					</nav>
-				</div>
-			</section>
-			<section  class="homepage-slider" id="home-slider">
-				<div class="flexslider">
-					<ul class="slides">
-						<li>
-							<img src="themes/images/carousel/banner-1.jpg" alt="" />
-						</li>
-						<li>
-							<img src="themes/images/carousel/banner-2.jpg" alt="" />
-							<div class="intro">
-								<h1>Mid season sale</h1>
-								<p><span>Up to 50% Off</span></p>
-								<p><span>On selected items online and in stores</span></p>
-							</div>
-						</li>
-					</ul>
-				</div>			
-			</section>
-			<section class="header_text">
-				We stand for top quality templates. Our genuine developers always optimized bootstrap commercial templates. 
-				<br/>Don't miss to use our cheap abd best bootstrap templates.
-			</section>
 			<section class="main-content">
 				<div class="row">
 					<div class="span12">													
 						<div class="row">
 							<div class="span12">
 								<h4 class="title">
-									<span class="pull-left"><span class="text"><span class="line">Feature <strong>Products</strong></span></span></span>
+									<span class="pull-left"><span class="text"><span class="line"><strong>Ofertas</strong></span></span></span>
 									<span class="pull-right">
 										<a class="left button" href="#myCarousel" data-slide="prev"></a><a class="right button" href="#myCarousel" data-slide="next"></a>
 									</span>
@@ -210,7 +170,7 @@
 						<div class="row">
 							<div class="span12">
 								<h4 class="title">
-									<span class="pull-left"><span class="text"><span class="line">Latest <strong>Products</strong></span></span></span>
+									<span class="pull-left"><span class="text"><span class="line">Últimos <strong>Productos</strong></span></span></span>
 									<span class="pull-right">
 										<a class="left button" href="#myCarousel-2" data-slide="prev"></a><a class="right button" href="#myCarousel-2" data-slide="next"></a>
 									</span>
@@ -324,29 +284,6 @@
 							</div>	
 						</div>		
 					</div>				
-				</div>
-			</section>
-			<section class="our_client">
-				<h4 class="title"><span class="text">Manufactures</span></h4>
-				<div class="row">					
-					<div class="span2">
-						<a href="#"><img alt="" src="themes/images/clients/14.png"></a>
-					</div>
-					<div class="span2">
-						<a href="#"><img alt="" src="themes/images/clients/35.png"></a>
-					</div>
-					<div class="span2">
-						<a href="#"><img alt="" src="themes/images/clients/1.png"></a>
-					</div>
-					<div class="span2">
-						<a href="#"><img alt="" src="themes/images/clients/2.png"></a>
-					</div>
-					<div class="span2">
-						<a href="#"><img alt="" src="themes/images/clients/3.png"></a>
-					</div>
-					<div class="span2">
-						<a href="#"><img alt="" src="themes/images/clients/4.png"></a>
-					</div>
 				</div>
 			</section>
 			<section id="footer-bar">
